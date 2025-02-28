@@ -1,0 +1,84 @@
+/* dark-theme.css */
+
+/* Make the root background dark */
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: #E6E6E6;
+    -fx-font-size: 14px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: linear-gradient(#202124, #2A2A2A);
+    -fx-text-fill: #E6E6E6;
+    -fx-border-color: #3E3E3E;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow( three-pass-box , rgba(52,235,174,0.5) , 5, 0.3 , 0 , 0 );
+    -fx-cursor: hand;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+
+.button:hover {
+    -fx-background-color: #1F1F1F;
+    -fx-effect: dropshadow( three-pass-box , rgba(52,235,174,0.8) , 8, 0.5 , 0 , 0 );
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #1E1E1E;
+    -fx-text-fill: #E6E6E6;
+    -fx-border-color: #3E3E3E;
+    -fx-border-width: 1px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+
+/* TableView styling */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: #3E3E3E;
+    -fx-table-header-border-color: #3E3E3E;
+    -fx-control-inner-background: #1E1E1E;
+}
+
+.table-view .column-header {
+    -fx-background-color: #202124;
+    -fx-text-fill: #E6E6E6;
+    -fx-font-weight: 600;
+}
+
+.table-view .cell {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #1E1E1E;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #242424; /* Slight difference for alternating rows */
+}
+
+/* PieChart styling (if used) */
+.pie-chart {
+    -fx-background-color: transparent;
+}
+
+.chart-legend {
+    -fx-text-fill: #E6E6E6;
+}
+
+/* Subtle scroll bar styling */
+.scroll-bar:vertical {
+    -fx-background-color: #222;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(52,235,174, 0.5);
+    -fx-background-radius: 4px;
+}
